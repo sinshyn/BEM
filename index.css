@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn--container {
+  margin: 30px auto;
+}
+
+.btn {
+  min-width: 120px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  color: aliceblue;
+  border: 0;
+  padding: 12px 48px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.btn + .btn {
+  margin-left: 20px;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.btn--success {
+  background-color: #6fbf35;
+}
+.btn--warn {
+  background-color: #ffb702;
+}
+.btn--danger {
+  background-color: #ff623c;
+}
+
+.btn--disable {
+  opacity: 0.5 !important;
+  cursor: default;
+}
+.btn--sm {
+  padding: 8px 32px;
+}
+.btn--lg {
+  padding: 16px 56px;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-left: 4px solid;
+  border-radius: 2px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+}
+.toast__icon {
+  font-size: 24px;
+}
+.toast__icon,
+.toast__close {
+  padding: 0 16px;
+}
+.toast__body {
+}
+.toast__body__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.toast__body__msg {
+  font-size: 14px;
+  color: #888;
+  margin-top: 4px;
+}
+.toast__close {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.toast__close:hover {
+  opacity: 0.5;
+}
+.toast--success {
+  color: #47d663;
+}
+.toast--info {
+  color: #3086eb;
+}
+.toast--warn {
+  color: #febf23;
+}
+.toast--error{
+    color: #ff623c;
+}
